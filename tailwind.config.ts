@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				luka: {
+					blue: '#517fa4',
+					navy: '#243949',
+					purple: '#8B5CF6',
+					light: '#F5F7FA',
+					dark: '#1A1F2C'
 				}
 			},
 			borderRadius: {
@@ -68,28 +76,64 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			fontFamily: {
+				sans: ['SF Pro Display', 'Inter', 'system-ui', 'sans-serif'],
+				mono: ['SF Mono', 'monospace'],
+			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' },
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' },
+				},
+				float: {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' },
+				},
+				shimmer: {
+					'0%': { backgroundPosition: '-500px 0' },
+					'100%': { backgroundPosition: '500px 0' },
+				},
+				fadeIn: {
+					'0%': { opacity: '0', transform: 'translateY(10px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' },
+				},
+				slowSpin: {
+					'0%': { transform: 'rotate(0deg)' },
+					'100%': { transform: 'rotate(360deg)' },
+				},
+				pulse: {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.5' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'shimmer': 'shimmer 2s infinite linear',
+				'fade-in': 'fadeIn 0.6s ease-out',
+				'slow-spin': 'slowSpin 6s linear infinite',
+				'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+				'hero-gradient': 'linear-gradient(to right, #243949 0%, #517fa4 100%)',
+				'glass-gradient': 'linear-gradient(to top, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.4) 100%)',
+				'card-shimmer': 'linear-gradient(to right, rgba(255,255,255,0) 0, rgba(255,255,255,0.2) 20%, rgba(255,255,255,0) 40%)',
+			},
+			boxShadow: {
+				'soft': '0 10px 30px -5px rgba(0, 0, 0, 0.05)',
+				'glow': '0 0 20px rgba(139, 92, 246, 0.3)',
+				'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.15)',
+			},
+			backdropFilter: {
+				'none': 'none',
+				'blur': 'blur(10px)',
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],

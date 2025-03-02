@@ -86,71 +86,90 @@ const Hero = () => {
           </div>
 
           <div className="relative fade-in-section">
-            <div className="absolute inset-0 bg-gradient-radial from-blue-100/30 to-transparent rounded-full blur-2xl opacity-70 animate-pulse"></div>
-            <div className="relative glass-card p-6 md:p-8 z-10 backdrop-blur-xl">
-              <div className="absolute top-0 left-0 w-full h-full bg-white bg-opacity-20 backdrop-blur-sm rounded-2xl"></div>
-              <div className="relative">
-                <div className="w-16 h-16 bg-gradient-to-br from-luka-blue to-luka-purple rounded-lg shadow-glow flex items-center justify-center mb-6 animate-float">
-                  <Server className="text-white h-8 w-8" />
+            {/* Device mockups container with perspective */}
+            <div className="relative md:h-[500px] flex items-center justify-center">
+              {/* Blue gradient background */}
+              <div className="absolute inset-0 bg-gradient-radial from-blue-300/50 to-transparent rounded-full blur-2xl opacity-70 animate-pulse"></div>
+              
+              {/* Desktop mockup */}
+              <div className="relative z-20 bg-white rounded-2xl shadow-2xl overflow-hidden max-w-[650px] border-8 border-gray-200 transform md:translate-x-10 md:translate-y-5">
+                <div className="h-6 bg-gray-200 flex items-center px-2">
+                  <div className="flex space-x-1">
+                    <div className="w-2.5 h-2.5 rounded-full bg-red-500"></div>
+                    <div className="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
+                    <div className="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+                  </div>
                 </div>
-                <h2 className="text-2xl font-bold mb-4">LUKA AI Server</h2>
-                <p className="text-gray-700 mb-6">
-                  Luka is a private, secure, self-contained AI assistant for every aspect of your business, no matter how sensitive.
-                </p>
-                <div className="space-y-3">
-                  <div className="flex items-start">
-                    <div className="mr-3 p-1.5 rounded-full bg-green-100">
-                      <svg
-                        className="h-3 w-3 text-green-500"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
+                <div className="bg-luka-blue p-3 pb-20">
+                  <div className="flex justify-center items-center h-full">
+                    <div className="text-center text-white">
+                      <h3 className="text-5xl font-bold mb-2">LUKA</h3>
+                      <div className="text-xl font-light">Business AI + Cloud</div>
+                      <div className="grid grid-cols-4 gap-3 mt-6">
+                        <div className="bg-white/10 p-2 rounded-lg">
+                          <Server className="h-5 w-5 text-white mx-auto" />
+                        </div>
+                        <div className="bg-white/10 p-2 rounded-lg">
+                          <Shield className="h-5 w-5 text-white mx-auto" />
+                        </div>
+                        <div className="bg-white/10 p-2 rounded-lg">
+                          <Lock className="h-5 w-5 text-white mx-auto" />
+                        </div>
+                        <div className="bg-white/10 p-2 rounded-lg">
+                          <svg className="h-5 w-5 text-white mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                          </svg>
+                        </div>
+                      </div>
                     </div>
-                    <p className="text-sm text-gray-600">
-                      Zero data egress, no model training
-                    </p>
                   </div>
-                  <div className="flex items-start">
-                    <div className="mr-3 p-1.5 rounded-full bg-green-100">
-                      <svg
-                        className="h-3 w-3 text-green-500"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                          clipRule="evenodd"
-                        />
+                </div>
+              </div>
+              
+              {/* Mobile mockup positioned in front */}
+              <div className="absolute z-30 bottom-0 left-0 md:left-4 md:bottom-4 bg-white rounded-[28px] shadow-2xl border-[8px] border-gray-200 w-[240px] transform translate-y-12 md:translate-y-0">
+                <div className="h-6 bg-gray-100 flex items-center justify-center rounded-t-lg">
+                  <div className="w-16 h-1 bg-gray-300 rounded-full"></div>
+                </div>
+                <div className="bg-luka-blue text-white p-3 h-[400px] rounded-b-lg flex flex-col">
+                  <div className="flex items-center mb-4">
+                    <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center mr-2">
+                      <svg className="h-4 w-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                       </svg>
                     </div>
-                    <p className="text-sm text-gray-600">
-                      No connection to public internet
-                    </p>
+                    <div className="text-sm">LUKA Assistant</div>
+                    <div className="ml-auto flex space-x-2">
+                      <svg className="h-4 w-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                      <svg className="h-4 w-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                      </svg>
+                    </div>
                   </div>
-                  <div className="flex items-start">
-                    <div className="mr-3 p-1.5 rounded-full bg-green-100">
-                      <svg
-                        className="h-3 w-3 text-green-500"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                          clipRule="evenodd"
-                        />
+                  
+                  <div className="bg-white/10 p-3 rounded-lg mb-2 self-start max-w-[85%]">
+                    <p className="text-xs text-white">How can I help with your business needs today?</p>
+                  </div>
+                  
+                  <div className="bg-white/5 p-3 rounded-lg mb-2 self-end max-w-[85%]">
+                    <p className="text-xs text-white/90">Can you help analyze these sales reports?</p>
+                  </div>
+                  
+                  <div className="bg-white/10 p-3 rounded-lg self-start max-w-[85%]">
+                    <p className="text-xs text-white">I'll analyze your sales data and prepare a detailed report with trends and recommendations for growth.</p>
+                  </div>
+                  
+                  <div className="mt-auto p-2 flex items-center bg-white/5 rounded-full">
+                    <div className="w-full bg-white/10 rounded-full py-1.5 px-3 text-xs text-white/60">
+                      Type a message...
+                    </div>
+                    <div className="ml-2 p-1.5 bg-white/10 rounded-full">
+                      <svg className="h-4 w-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                       </svg>
                     </div>
-                    <p className="text-sm text-gray-600">
-                      Affordable for all business sizes
-                    </p>
                   </div>
                 </div>
               </div>

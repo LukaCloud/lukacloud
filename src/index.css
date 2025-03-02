@@ -116,3 +116,40 @@
 .staggered-fade-in > *:nth-child(6) {
   animation: fadeIn 0.6s ease-out 0.6s forwards;
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.device-container {
+  perspective: 1000px;
+}
+
+.device-mockup {
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.desktop-mockup {
+  animation: floating 6s ease-in-out infinite;
+}
+
+.mobile-mockup {
+  animation: floating 4s ease-in-out 1s infinite;
+}

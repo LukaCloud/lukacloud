@@ -86,8 +86,8 @@ const Hero = () => {
           </div>
 
           <div className="relative fade-in-section">
-            {/* Device mockup container */}
-            <div className="devices-mockup">
+            {/* Device mockup container with transparent background */}
+            <div className="devices-mockup transparent-bg">
               <img 
                 src="/lovable-uploads/90860045-2085-4152-950b-da278a8a46d4.png" 
                 alt="Luka application interface showing desktop and mobile views" 

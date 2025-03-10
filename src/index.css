@@ -81,6 +81,10 @@
     animation: floating 6s ease-in-out infinite;
   }
   
+  .transparent-bg {
+    background-color: transparent;
+  }
+  
   @media (max-width: 768px) {
     .devices-mockup {
       @apply max-w-sm my-6;

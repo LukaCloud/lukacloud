@@ -2,24 +2,58 @@
 import React, { useState } from "react";
 import { ArrowRight, Check } from "lucide-react";
 import { toast } from "@/components/ui/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 const CallToAction = () => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setEmail("");
+    try {
+      // Insert the email into the waitlist table
+      const { error } = await supabase
+        .from('waitlist')
+        .insert([{ email }]);
+
+      if (error) {
+        console.error("Error submitting email:", error);
+        
+        // Show appropriate error message based on error type
+        if (error.code === '23505') { // Unique violation error code
+          toast({
+            title: "Already registered",
+            description: "This email is already on our waitlist.",
+            variant: "destructive",
+          });
+        } else {
+          toast({
+            title: "Submission failed",
+            description: "There was an error adding your email. Please try again.",
+            variant: "destructive",
+          });
+        }
+      } else {
+        // Success case
+        toast({
+          title: "Success!",
+          description: "You've been added to our waitlist. We'll be in touch soon.",
+        });
+        // Clear the form
+        setEmail("");
+      }
+    } catch (err) {
+      console.error("Unexpected error:", err);
       toast({
-        title: "Success!",
-        description: "You've been added to our waitlist. We'll be in touch soon.",
+        title: "Submission failed",
+        description: "There was an unexpected error. Please try again later.",
+        variant: "destructive",
       });
-    }, 1000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

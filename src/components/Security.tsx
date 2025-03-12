@@ -27,33 +27,33 @@ const Security = () => {
               </div>
               
               <div className="glass-card p-6 md:p-8 backdrop-blur-xl">
-                <h3 className="text-xl font-semibold mb-4">Cloud tools, your way.</h3>
+                <h3 className="text-xl font-semibold mb-4">Compliance & Custody</h3>
                 <p className="text-gray-700 mb-8">
-                  When you can hold your business cloud in your hand, you know that client data is secure.
+                  Choosing a locally hosted private cloud means you can guarantee to your customers that their data never leaves your custody.
                 </p>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                   <SecurityFeature 
                     icon={<CloudOff className="h-5 w-5" />}
-                    title="Zero Data Leakage"
+                    title="Full Data Custody"
                   />
                   <SecurityFeature 
                     icon={<ShieldCheck className="h-5 w-5" />}
-                    title="Secure by Design"
+                    title="Regulatory Compliance"
                   />
                   <SecurityFeature 
                     icon={<LockKeyhole className="h-5 w-5" />}
-                    title="Closed-Loop System"
+                    title="Protected Health Info"
                   />
                   <SecurityFeature 
                     icon={<FileDigit className="h-5 w-5" />}
-                    title="End-to-End Automation"
+                    title="Powerful Encryption"
                   />
                 </div>
                 
                 <div className="bg-luka-blue bg-opacity-5 p-4 rounded-lg border border-luka-blue border-opacity-20">
                   <p className="text-gray-700 text-sm">
-                    <span className="font-medium">Sensitive business & customer data shouldn't be exposed</span> to the open internet or web-based AI tools. Luka is designed to empower businesses with cutting-edge AI in a physically protected environment.
+                    <span className="font-medium">Luka Cloud simplifies compliance with privacy & security regulations</span>, decreasing business risk & costs. We're committed to ensuring software keeps Protected Health Information and other sensitive data private and secure.
                   </p>
                 </div>
               </div>

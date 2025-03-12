@@ -36,13 +36,11 @@ const Hero = () => {
           <div ref={containerRef} className="staggered-fade-in">
             <div className="chip mb-4">Introducing Luka</div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-              Business AI + Cloud{" "}
-              <span className="text-gradient">in a Box</span>
+              Your AI, Your Data{" "}
+              <span className="text-gradient">On Your Private Cloud</span>
             </h1>
             <p className="mt-6 text-lg text-gray-600 max-w-lg">
-              The privacy-forward Cloud & AI solution you can hold in your
-              hands. Secure, self-contained, and ready to transform your
-              business.
+              The AI-enabled cloud productivity suite for Professional Services SMBs. Work smarter, securely - without Big Tech watching. 
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a href="#waitlist" className="btn-primary">

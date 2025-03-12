@@ -37,12 +37,6 @@ const Navbar = () => {
           <a href="#security" className="nav-link">
             Security
           </a>
-          <a href="#cloud" className="nav-link">
-            Luka Cloud
-          </a>
-          <a href="#box" className="nav-link">
-            Luka Box
-          </a>
         </div>
 
         <div className="hidden md:flex items-center space-x-4">
@@ -82,20 +76,6 @@ const Navbar = () => {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Security
-            </a>
-            <a
-              href="#cloud"
-              className="nav-link px-4 py-2"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Luka Cloud
-            </a>
-            <a
-              href="#box"
-              className="nav-link px-4 py-2"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Luka Box
             </a>
             <a
               href="#waitlist"

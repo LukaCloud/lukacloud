@@ -20,27 +20,27 @@ const Footer = () => {
             </div>
           </div>
           
-      
-          
-          <div>
-            <h3 className="font-semibold text-gray-900 mb-4">Company</h3>
-            <ul className="space-y-3">
-              <li>
-                <a href="#" className="text-gray-600 hover:text-luka-blue transition-colors">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-luka-blue transition-colors">
-                  Learn
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-luka-blue transition-colors">
-                  Contact
-                </a>
-              </li>
-            </ul>
+          <div className="md:col-span-2 flex justify-end">
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-4">Company</h3>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#" className="text-gray-600 hover:text-luka-blue transition-colors">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-600 hover:text-luka-blue transition-colors">
+                    Learn
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-600 hover:text-luka-blue transition-colors">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         

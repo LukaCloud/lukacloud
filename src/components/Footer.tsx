@@ -10,10 +10,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <div className="mb-4">
-              <span className="text-xl font-bold text-luka-navy">LUKA CLOUD</span>
+              <span className="text-xl font-bold text-luka-navy">LUKA</span>
             </div>
             <p className="text-gray-600 max-w-md mb-6">
-              Cloud At Scale For Every Business
+              Powered by Cachai's Independent Cloud Software Infrastructure
             </p>
             <div className="text-sm text-gray-500">
               &copy; {currentYear} Cachai

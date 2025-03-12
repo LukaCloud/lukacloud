@@ -110,7 +110,7 @@ const CallToAction = () => {
 
           <div className="fade-in-section">
             <div className="bg-white bg-opacity-10 border border-white border-opacity-20 rounded-2xl p-6 backdrop-blur-sm">
-              <h3 className="text-xl font-semibold mb-4">LUKA Box & Cloud</h3>
+              <h3 className="text-xl font-semibold mb-4">2 Ways to Get Luka</h3>
               <p className="mb-6 opacity-90">
                 Choose the right solution for your business needs, with the security and privacy guarantees you demand.
               </p>
@@ -144,19 +144,7 @@ const CallToAction = () => {
                   </div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row sm:items-start gap-3">
-                  <div className="flex-shrink-0">
-                    <div className="w-8 h-8 flex items-center justify-center rounded-full bg-white bg-opacity-20">
-                      <span className="font-bold">3</span>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className="font-medium mb-1">Resilient</h4>
-                    <p className="text-sm opacity-80">
-                      Luka always provides encrypted backups to multiple locations
-                    </p>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 
 import React from "react";
-import { LockKeyhole, CloudOff, ShieldCheck, FileDigit, Scale, Wallet, PencilRuler, Users } from "lucide-react";
+import { LockKeyhole, CloudOff, ShieldCheck, FileDigit } from "lucide-react";
 
 const SecurityFeature = ({ icon, title }: { icon: React.ReactNode, title: string }) => {
   return (
@@ -66,45 +66,15 @@ const Security = () => {
               Privacy-forward. <span className="text-gradient">Secure by design.</span>
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              Luka is a turnkey software suite designed to empower businesses with cutting-edge AI and enterprise tools in a physically protected, closed-loop environment.
+              Built by a team of seasoned distributed systems engineers, using ever-improving open-source software and models, Luka Cloud is a safe place to mix AI tools in with your work. No more sanitizing, no more going back and forth between your files and your chat bot.
             </p>
             
-            <div className="space-y-6">
-              <div className="flex">
-                <div className="flex-shrink-0 h-10 w-10 rounded-md bg-luka-blue bg-opacity-10 flex items-center justify-center text-luka-blue mr-4">
-                  <Scale className="h-5 w-5" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium mb-1">Affordable & Predictable License</h3>
-                  <p className="text-gray-600">
-                    Flexible pricing suitable for all sizes of business without hidden fees.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex">
-                <div className="flex-shrink-0 h-10 w-10 rounded-md bg-luka-blue bg-opacity-10 flex items-center justify-center text-luka-blue mr-4">
-                  <Wallet className="h-5 w-5" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium mb-1">Highly Scalable & Portable</h3>
-                  <p className="text-gray-600">
-                    Grow your capabilities as your business expands, with no migration hassles.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex">
-                <div className="flex-shrink-0 h-10 w-10 rounded-md bg-luka-blue bg-opacity-10 flex items-center justify-center text-luka-blue mr-4">
-                  <PencilRuler className="h-5 w-5" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium mb-1">Designed for Non-Technical Users</h3>
-                  <p className="text-gray-600">
-                    Intuitive interface that requires no specialized IT knowledge.
-                  </p>
-                </div>
-              </div>
+            <div className="rounded-xl overflow-hidden shadow-lg mb-6">
+              <img 
+                src="/photo-1518770660439-4636190af475" 
+                alt="Digital security visualization" 
+                className="w-full h-auto object-cover aspect-video"
+              />
             </div>
           </div>
         </div>

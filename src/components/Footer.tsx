@@ -10,10 +10,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <div className="mb-4">
-              <span className="text-xl font-bold text-luka-navy">LUKA</span>
+              <span className="text-xl font-bold text-luka-navy">LUKA CLOUD</span>
             </div>
             <p className="text-gray-600 max-w-md mb-6">
-              Automating Orchestration, Consensus, and State Management for Distributed Systems
+              Cloud At Scale For Every Business
             </p>
             <div className="text-sm text-gray-500">
               &copy; {currentYear} Cachai
@@ -28,11 +28,7 @@ const Footer = () => {
                   Luka
                 </a>
               </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-luka-blue transition-colors">
-                  Altiro
-                </a>
-              </li>
+          
             </ul>
           </div>
           

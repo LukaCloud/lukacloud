@@ -26,7 +26,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <a href="#" className="flex items-center">
-          <span className="text-xl font-bold text-luka-navy">LUKA</span>
+          <span className="text-xl font-bold text-luka-navy">LUKA CLOUD</span>
         </a>
 
         {/* Desktop Menu */}

@@ -25,17 +25,10 @@ const Footer = () => {
               <h3 className="font-semibold text-gray-900 mb-4">Company</h3>
               <ul className="space-y-3">
                 <li>
-                  <a href="#" className="text-gray-600 hover:text-luka-blue transition-colors">
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-600 hover:text-luka-blue transition-colors">
-                    Learn
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-600 hover:text-luka-blue transition-colors">
+                  <a 
+                    href="mailto:sarah@lukacloud.ai" 
+                    className="text-gray-600 hover:text-luka-blue transition-colors"
+                  >
                     Contact
                   </a>
                 </li>

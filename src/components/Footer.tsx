@@ -20,17 +20,7 @@ const Footer = () => {
             </div>
           </div>
           
-          <div>
-            <h3 className="font-semibold text-gray-900 mb-4">Products</h3>
-            <ul className="space-y-3">
-              <li>
-                <a href="#" className="text-gray-600 hover:text-luka-blue transition-colors">
-                  Luka
-                </a>
-              </li>
-          
-            </ul>
-          </div>
+      
           
           <div>
             <h3 className="font-semibold text-gray-900 mb-4">Company</h3>

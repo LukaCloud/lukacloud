@@ -71,7 +71,7 @@ const Security = () => {
             
             <div className="rounded-xl overflow-hidden shadow-lg mb-6">
               <img 
-                src="/photo-1518770660439-4636190af475" 
+                src="/photo-1487058792275-0ad4aaf24ca7" 
                 alt="Digital security visualization" 
                 className="w-full h-auto object-cover aspect-video"
               />

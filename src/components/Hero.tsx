@@ -91,7 +91,7 @@ const Hero = () => {
               <img 
                 src="/lovable-uploads/309d3a6c-150c-4063-924d-ada445ba1d50.png" 
                 alt="Luka application interface showing desktop and mobile views" 
-                className="w-full h-auto object-contain drop-shadow-xl"
+                className="w-full h-auto object-contain"
               />
             </div>
           </div>

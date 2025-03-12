@@ -68,14 +68,6 @@ const Security = () => {
             <p className="text-lg text-gray-600 mb-8">
               Built by a team of seasoned distributed systems engineers, using ever-improving open-source software and models, Luka Cloud is a safe place to mix AI tools in with your work. No more sanitizing, no more going back and forth between your files and your chat bot.
             </p>
-            
-            <div className="rounded-xl overflow-hidden shadow-lg mb-6">
-              <img 
-                src="/photo-1487058792275-0ad4aaf24ca7" 
-                alt="Digital security visualization" 
-                className="w-full h-auto object-cover aspect-video"
-              />
-            </div>
           </div>
         </div>
       </div>

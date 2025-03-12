@@ -119,7 +119,7 @@ const CallToAction = () => {
                 <div className="flex flex-col sm:flex-row sm:items-start gap-3">
                   <div className="flex-shrink-0">
                     <div className="w-8 h-8 flex items-center justify-center rounded-full bg-white bg-opacity-20">
-                      <span className="font-bold">Cloud</span>
+                      <span className="font-bold">1</span>
                     </div>
                   </div>
                   <div>
@@ -133,7 +133,7 @@ const CallToAction = () => {
                 <div className="flex flex-col sm:flex-row sm:items-start gap-3">
                   <div className="flex-shrink-0">
                     <div className="w-8 h-8 flex items-center justify-center rounded-full bg-white bg-opacity-20">
-                      <span className="font-bold">Box</span>
+                      <span className="font-bold">2</span>
                     </div>
                   </div>
                   <div>
@@ -147,7 +147,7 @@ const CallToAction = () => {
                 <div className="flex flex-col sm:flex-row sm:items-start gap-3">
                   <div className="flex-shrink-0">
                     <div className="w-8 h-8 flex items-center justify-center rounded-full bg-white bg-opacity-20">
-                      <span className="font-bold">Either Way</span>
+                      <span className="font-bold">3</span>
                     </div>
                   </div>
                   <div>

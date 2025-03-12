@@ -1,19 +1,52 @@
 
 import React from "react";
-import { FileText, MessageSquare, File, Search, Code, Shield, Zap, Server } from "lucide-react";
+import { 
+  Server, 
+  Users, 
+  Brain, 
+  Shield, 
+  User, 
+  Link,
+  Globe,
+  Lock,
+  Database,
+  Video,
+  FileText,
+  PieChart,
+  Library,
+  Search,
+  Code,
+  Layers,
+  Laptop,
+  Smartphone,
+  DollarSign,
+  HardDrive,
+  Mail
+} from "lucide-react";
 
-const FeatureCard = ({ icon, title, description }: { 
+const FeatureCard = ({ 
+  icon, 
+  title, 
+  bulletPoints 
+}: { 
   icon: React.ReactNode, 
   title: string, 
-  description: string 
+  bulletPoints: string[] 
 }) => {
   return (
     <div className="feature-card">
       <div className="mb-4 p-3 rounded-lg w-12 h-12 flex items-center justify-center bg-gradient-to-br from-luka-blue to-luka-purple text-white">
         {icon}
       </div>
-      <h3 className="text-lg font-semibold mb-2">{title}</h3>
-      <p className="text-gray-600 text-sm">{description}</p>
+      <h3 className="text-lg font-semibold mb-3">{title}</h3>
+      <ul className="text-gray-600 text-sm space-y-2">
+        {bulletPoints.map((point, index) => (
+          <li key={index} className="flex items-start">
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-luka-blue mt-1.5 mr-2 flex-shrink-0"></span>
+            <span>{point}</span>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
@@ -21,44 +54,62 @@ const FeatureCard = ({ icon, title, description }: {
 const Features = () => {
   const features = [
     {
-      icon: <FileText className="h-5 w-5" />,
-      title: "Financial Report Generation",
-      description: "Generate comprehensive financial reports that comply with regulations and internal policies."
+      icon: <Server className="h-5 w-5" />,
+      title: "Private Dedicated Cloud",
+      bulletPoints: [
+        "Easy access anywhere",
+        "Encrypted backups",
+        "Shared & globally consistent",
+        "Independent of cloud providers"
+      ]
     },
     {
-      icon: <MessageSquare className="h-5 w-5" />,
-      title: "Sensitive Meeting Summaries",
-      description: "Create accurate, private summaries of your most confidential meetings."
+      icon: <Users className="h-5 w-5" />,
+      title: "Seamless Collaboration",
+      bulletPoints: [
+        "Shared Documents & Editing",
+        "Private Video calls & messaging",
+        "Project Management",
+        "Analytics, reports & Wiki"
+      ]
     },
     {
-      icon: <File className="h-5 w-5" />,
-      title: "File Digitization & Organization",
-      description: "Digitize and organize physical and digital files in a secure, searchable format."
-    },
-    {
-      icon: <Search className="h-5 w-5" />,
-      title: "Integrated Research & eDiscovery",
-      description: "Find what you need across your business data with powerful search capabilities."
-    },
-    {
-      icon: <Code className="h-5 w-5" />,
-      title: "Drafting Legal Docs & Contracts",
-      description: "Create, review, and refine legal documents and contracts with AI assistance."
+      icon: <Brain className="h-5 w-5" />,
+      title: "AI for Your Business",
+      bulletPoints: [
+        "Combined context-driven insights",
+        "Library of open-source models & apps",
+        "Private RAG",
+        "Safe to integrate with sensitive data"
+      ]
     },
     {
       icon: <Shield className="h-5 w-5" />,
-      title: "Classification Management",
-      description: "Manage sensitive and classified information with appropriate security controls."
+      title: "Secure & Private By Design",
+      bulletPoints: [
+        "Open Source & Zero-trust architecture",
+        "No API; Never trains for general use",
+        "Strict namespace-level separation",
+        "Encrypted backups"
+      ]
     },
     {
-      icon: <Zap className="h-5 w-5" />,
-      title: "Billing Code Extraction",
-      description: "Automatically extract and organize billing codes from documents and files."
+      icon: <User className="h-5 w-5" />,
+      title: "Built For Non-Technical Professionals",
+      bulletPoints: [
+        "No IT team required",
+        "Familiar business cloud applications",
+        "Sync across Desktop & Mobile Apps",
+        "Predictable & affordable pricing"
+      ]
     },
     {
-      icon: <Server className="h-5 w-5" />,
-      title: "Client Intake & Conflict Checks",
-      description: "Streamline client onboarding while ensuring compliance and avoiding conflicts."
+      icon: <Link className="h-5 w-5" />,
+      title: "Integrates with Existing Tools",
+      bulletPoints: [
+        "Access data from FTP, Windows Network Drive, Sharepoint, NFS, Object Storage, etc.",
+        "Native integration with iOS, Android, MacOS, Windows, Linux, Outlook, Gmail, and Thunderbird"
+      ]
     }
   ];
 
@@ -75,13 +126,13 @@ const Features = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 fade-in-section">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 fade-in-section">
           {features.map((feature, index) => (
             <FeatureCard
               key={index}
               icon={feature.icon}
               title={feature.title}
-              description={feature.description}
+              bulletPoints={feature.bulletPoints}
             />
           ))}
         </div>

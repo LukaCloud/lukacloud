@@ -119,13 +119,13 @@ const CallToAction = () => {
                 <div className="flex flex-col sm:flex-row sm:items-start gap-3">
                   <div className="flex-shrink-0">
                     <div className="w-8 h-8 flex items-center justify-center rounded-full bg-white bg-opacity-20">
-                      <span className="font-bold">1</span>
+                      <span className="font-bold">Cloud</span>
                     </div>
                   </div>
                   <div>
                     <h4 className="font-medium mb-1">Luka Cloud</h4>
                     <p className="text-sm opacity-80">
-                      Hosted by Cachai with encrypted backups, eliminating frustrating manual tasks and providing end-to-end automation.
+                      Hosted by Cachai with encrypted backups. Your data stays in your legal custody with no IT hassle.
                     </p>
                   </div>
                 </div>
@@ -133,13 +133,13 @@ const CallToAction = () => {
                 <div className="flex flex-col sm:flex-row sm:items-start gap-3">
                   <div className="flex-shrink-0">
                     <div className="w-8 h-8 flex items-center justify-center rounded-full bg-white bg-opacity-20">
-                      <span className="font-bold">2</span>
+                      <span className="font-bold">Box</span>
                     </div>
                   </div>
                   <div>
                     <h4 className="font-medium mb-1">Luka Box</h4>
                     <p className="text-sm opacity-80">
-                      With a Luka Box at your headquarters, powerful AI integrated with your business cloud and securely backed up in the Cachai cloud.
+                      For those who prefer to hold their entire cloud system in their hands. 
                     </p>
                   </div>
                 </div>
@@ -147,13 +147,13 @@ const CallToAction = () => {
                 <div className="flex flex-col sm:flex-row sm:items-start gap-3">
                   <div className="flex-shrink-0">
                     <div className="w-8 h-8 flex items-center justify-center rounded-full bg-white bg-opacity-20">
-                      <span className="font-bold">3</span>
+                      <span className="font-bold">Either Way</span>
                     </div>
                   </div>
                   <div>
                     <h4 className="font-medium mb-1">Affordable Licensing</h4>
                     <p className="text-sm opacity-80">
-                      Efficient, highly scalable, and flexibly priced for a broad range of businesses and organizations.
+                      Luka Cloud always provides encrypted backups to multiple locations
                     </p>
                   </div>
                 </div>

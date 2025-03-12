@@ -36,8 +36,8 @@ const Hero = () => {
           <div ref={containerRef} className="staggered-fade-in">
             <div className="chip mb-4">Introducing Luka</div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-              Your AI, Your Data{" "}
-              <span className="text-gradient">On Your Private Cloud</span>
+              Your AI. Your Data.{" "}
+              <span className="text-gradient">On Your Private Cloud.</span>
             </h1>
             <p className="mt-6 text-lg text-gray-600 max-w-lg">
               The AI-enabled cloud productivity suite for Professional Services SMBs. Work smarter, securely - without Big Tech watching. 

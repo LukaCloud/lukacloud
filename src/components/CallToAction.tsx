@@ -125,7 +125,7 @@ const CallToAction = () => {
                   <div>
                     <h4 className="font-medium mb-1">Luka Cloud</h4>
                     <p className="text-sm opacity-80">
-                      Hosted by Cachai with encrypted backups. Your data stays in your legal custody with no IT hassle.
+                      Your data stays in your legal custody with no IT hassle.
                     </p>
                   </div>
                 </div>
@@ -151,9 +151,9 @@ const CallToAction = () => {
                     </div>
                   </div>
                   <div>
-                    <h4 className="font-medium mb-1">Affordable Licensing</h4>
+                    <h4 className="font-medium mb-1">Resilient</h4>
                     <p className="text-sm opacity-80">
-                      Luka Cloud always provides encrypted backups to multiple locations
+                      Luka always provides encrypted backups to multiple locations
                     </p>
                   </div>
                 </div>
